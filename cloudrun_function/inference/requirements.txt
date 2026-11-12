@@ -1,0 +1,13 @@
+--extra-index-url https://download.pytorch.org/whl/cpu
+
+flask>=3.0
+gunicorn>=22.0
+torch
+torchvision
+megadetector>=10.0.0
+onnx2torch
+google-cloud-storage
+opencv-python-headless
+Pillow
+requests
+numpy

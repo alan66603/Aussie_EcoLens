@@ -1,0 +1,47 @@
+# Build artifacts
+*.zip
+
+# Python virtual environment
+.venv/
+venv/
+
+# Legacy
+/AussieEcoLense
+
+# Terraform - secrets and local config
+terraform/terraform.tfvars
+
+# Terraform - state files (never commit these)
+*.tfstate
+*.tfstate.*
+*.tfstate.backup
+.terraform.lock.hcl
+
+# Terraform - local plugin cache
+**/.terraform/
+
+# Terraform - crash logs
+crash.log
+crash.*.log
+
+# Terraform - local overrides
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+
+context/
+
+# Lambda layer - installed packages (built at terraform apply time)
+lambda_layer/python/
+
+# API testing - media files (place your own test images/videos here)
+api_testing/*.jpg
+api_testing/*.JPG
+api_testing/*.jpeg
+api_testing/*.JPEG
+api_testing/*.png
+api_testing/*.PNG
+api_testing/*.mp4
+api_testing/*.MP4
+FIT5225 2026 S1 A2.pdf
